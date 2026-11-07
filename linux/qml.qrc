@@ -1,0 +1,43 @@
+<RCC>
+  <qresource prefix="/">
+    <file>qml/Avatar.qml</file>
+    <file>qml/Btn.qml</file>
+    <file>qml/Bubble.qml</file>
+    <file>qml/CallButton.qml</file>
+    <file>qml/CallsPage.qml</file>
+    <file>qml/CallWindow.qml</file>
+    <file>qml/Card.qml</file>
+    <file>qml/Chip.qml</file>
+    <file>qml/Confirm.qml</file>
+    <file>qml/ContactEditor.qml</file>
+    <file>qml/ContactsPage.qml</file>
+    <file>qml/ControlButton.qml</file>
+    <file>qml/ConvRow.qml</file>
+    <file>qml/Field.qml</file>
+    <file>qml/Heading.qml</file>
+    <file>qml/HomePage.qml</file>
+    <file>qml/IconBtn.qml</file>
+    <file>qml/Icon.qml</file>
+    <file>qml/Key.qml</file>
+    <file>qml/Label.qml</file>
+    <file>qml/LogRow.qml</file>
+    <file>qml/Main.qml</file>
+    <file>qml/MessagesPage.qml</file>
+    <file>qml/NavItem.qml</file>
+    <file>qml/NotifCard.qml</file>
+    <file>qml/NotifsPage.qml</file>
+    <file>qml/NowPlaying.qml</file>
+    <file>qml/PhotosPage.qml</file>
+    <file>qml/Row2.qml</file>
+    <file>qml/Scroller.qml</file>
+    <file>qml/Separator.qml</file>
+    <file>qml/SettingsPage.qml</file>
+    <file>qml/Sidebar.qml</file>
+    <file>qml/Slide.qml</file>
+    <file>qml/SwitchRow.qml</file>
+    <file>qml/Sw.qml</file>
+    <file>qml/Toast.qml</file>
+    <file>qml/ToggleTile.qml</file>
+    <file>qml/singletons/Theme.qml</file>
+  </qresource>
+</RCC>

@@ -1,0 +1,152 @@
+/* Editorial, warm and quiet: paper neutrals, deep green ink, one amber highlight. */
+:root {
+  --accent-bg-color: #2f5d4a;
+  --accent-fg-color: #ffffff;
+  --accent-color: #2f6b52;
+}
+@define-color accent_bg_color #2f5d4a;
+@define-color accent_color #2f6b52;
+@define-color amber #c8902e;
+
+.display { font-family: "Noto Serif", serif; font-size: 30px; font-weight: 500; }
+.display-sm { font-family: "Noto Serif", serif; font-size: 21px; font-weight: 500; }
+.eyebrow { font-size: 11px; font-weight: 700; letter-spacing: 1.4px; color: @amber; }
+.muted { opacity: 0.62; }
+.mono { font-family: monospace; }
+
+.card-soft { background: alpha(currentColor, 0.045); border-radius: 18px; padding: 18px; }
+
+.phone-card { padding: 14px 12px 6px 12px; }
+.phone-card .name { font-weight: 600; }
+.dot { min-width: 8px; min-height: 8px; border-radius: 99px; background: #b4533c; }
+.dot.on { background: #3e9c6a; }
+.dot.wait { background: @amber; }
+
+.toggle-tile { border-radius: 18px; padding: 14px 16px; min-width: 132px; min-height: 76px;
+  background: alpha(currentColor, 0.06); }
+.toggle-tile:hover { background: alpha(currentColor, 0.1); }
+.toggle-tile.on { background: @accent_bg_color; color: white; }
+.toggle-tile .tile-title { font-weight: 600; }
+.toggle-tile .tile-sub { font-size: 12px; opacity: 0.75; }
+
+.battery-big { font-family: "Noto Serif", serif; font-size: 52px; font-weight: 500; }
+
+.bubble { border-radius: 18px 18px 18px 6px; padding: 8px 13px; background: alpha(currentColor, 0.07); }
+.bubble.self { border-radius: 18px 18px 6px 18px; background: @accent_bg_color; color: white; }
+.bubble .meta { font-size: 11px; opacity: 0.6; }
+.bubble .sender { font-size: 12px; font-weight: 700; color: @amber; }
+.day-sep { font-size: 12px; opacity: 0.55; margin: 10px 0 4px 0; }
+
+.dialpad button { min-width: 78px; min-height: 62px; border-radius: 99px; padding: 0; }
+.dialpad .digit { font-size: 24px; font-weight: 500; }
+.dialpad .letters { font-size: 10px; letter-spacing: 2px; opacity: 0.55; }
+.dial-entry { font-size: 30px; font-family: "Noto Serif", serif; }
+.dial-entry text { caret-color: @amber; }
+.call-btn { min-width: 64px; min-height: 64px; border-radius: 99px; }
+.call-green { background: #3e9c6a; color: white; }
+.call-red { background: #c4483a; color: white; }
+
+.call-window .caller { font-family: "Noto Serif", serif; font-size: 28px; font-weight: 500; }
+.call-window .timer { font-family: monospace; font-size: 16px; opacity: 0.75; }
+.round { border-radius: 99px; min-width: 52px; min-height: 52px; }
+.round.active { background: @accent_bg_color; color: white; }
+
+.photo-tile { border-radius: 10px; }
+.badge { background: @amber; color: white; border-radius: 99px; padding: 0 7px; font-size: 11px; font-weight: 700; min-width: 10px; }
+.notif-app { font-size: 12px; font-weight: 600; opacity: 0.7; }
+.now-playing-art { border-radius: 12px; }
+
+/* ---- Notch / Dynamic Island call pill ---- */
+.notch-window { background: transparent; }
+
+.notch-pill {
+  background: #1a1a1a;
+  border-radius: 28px;
+  min-height: 44px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.45), 0 0 0 1px rgba(255,255,255,0.06);
+  transition: all 300ms ease;
+}
+.notch-ringing {
+  min-width: 380px;
+  border-radius: 32px;
+}
+.notch-compact {
+  min-width: 260px;
+}
+
+.notch-caller {
+  font-family: "Noto Serif", serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #f0ede6;
+}
+.notch-caller-sm {
+  font-size: 14px;
+  font-weight: 600;
+  color: #f0ede6;
+}
+.notch-sub {
+  font-size: 12px;
+  color: rgba(240,237,230,0.55);
+}
+.notch-text {
+  font-size: 13px;
+  color: rgba(240,237,230,0.7);
+}
+.notch-timer {
+  font-family: monospace;
+  font-size: 13px;
+  color: #3e9c6a;
+  font-weight: 600;
+}
+
+.notch-active-dot {
+  min-width: 8px;
+  min-height: 8px;
+  border-radius: 99px;
+  background: #3e9c6a;
+  box-shadow: 0 0 6px rgba(62,156,106,0.6);
+}
+.notch-icon-ended {
+  color: #c4483a;
+  opacity: 0.8;
+}
+
+/* Notch action buttons */
+.notch-btn {
+  min-width: 42px;
+  min-height: 42px;
+  border-radius: 99px;
+  padding: 0;
+}
+.notch-btn-sm {
+  min-width: 34px;
+  min-height: 34px;
+  border-radius: 99px;
+  padding: 0;
+}
+.notch-answer {
+  background: #3e9c6a;
+  color: white;
+}
+.notch-answer:hover {
+  background: #4ab87a;
+}
+.notch-decline {
+  background: #c4483a;
+  color: white;
+}
+.notch-decline:hover {
+  background: #d45a4c;
+}
+
+/* Pulsing ring around the avatar during incoming call */
+.notch-pulse-ring {
+  border-radius: 99px;
+  padding: 3px;
+  animation: notch-pulse 1.5s ease-in-out infinite;
+}
+@keyframes notch-pulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(62,156,106,0.5); }
+  50% { box-shadow: 0 0 0 8px rgba(62,156,106,0); }
+}

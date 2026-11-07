@@ -1,0 +1,21 @@
+[Desktop Entry]
+Type=Application
+Name=Tandem
+GenericName=Phone Link
+Comment=Calls, messages, notifications and controls for your Android phone
+Exec=tandem %U
+Icon=com.cyberwolf.Tandem
+Terminal=false
+Categories=Network;Utility;
+Keywords=phone;android;sms;whatsapp;call;dialer;contacts;
+MimeType=x-scheme-handler/tel;x-scheme-handler/sms;x-scheme-handler/smsto;
+StartupNotify=false
+Actions=Dialer;Ring;
+
+[Desktop Action Dialer]
+Name=Open dialer
+Exec=tandem --dial=
+
+[Desktop Action Ring]
+Name=Find my phone
+Exec=tandem --ring

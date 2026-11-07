@@ -1,0 +1,5 @@
+#!/bin/sh
+# Launcher: runs the desktop app straight from the source tree.
+here="$(dirname "$(readlink -f "$0")")/.."
+export PYTHONPATH="$here${PYTHONPATH:+:$PYTHONPATH}"
+exec python3 -m tandem "$@"
