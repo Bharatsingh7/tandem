@@ -16,3 +16,17 @@ Makefile*
 *.stash
 *.user
 *.AppImage
+
+# User data, personal captures, media & caches
+shots/
+screenshots/
+captures/
+*.png
+*.jpg
+*.jpeg
+*.webp
+*.gif
+*.pcap
+*.db
+*.sqlite*
+*.log
